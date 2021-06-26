@@ -1,0 +1,207 @@
+{
+	// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// },
+	"Внешний отступ": {
+		"scope": "scss,css",
+		"prefix": "mm",
+		"body": [
+			"margin: $1px $2px $3px $4px;$0"
+		],
+		"description": "Внешний отступ"
+	},
+	"Внутренний отступ": {
+		"scope": "scss,css",
+		"prefix": "pp",
+		"body": [
+			"padding: $1px $2px $3px $4px;$0"
+		],
+		"description": "Внутренний отступ"
+	},
+	"Центрирование флекса": {
+		"scope": "scss,css",
+		"prefix": "cc",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;",
+			"flex-wrap: wrap;$0",
+		],
+		"description": "Центрирование флекса"
+	},
+	"Псевдоэлемент after": {
+		"scope": "scss,css",
+		"prefix": "aft",
+		"body": [
+			"position: relative;",
+			"&::after{",
+			"content: '';",
+			"position: absolute;",
+			"width: $1px;",
+			"height: $2px;",
+			"top: $3px;",
+			"left: $4px;",
+			"display: block;",
+			"}$0",
+		],
+		"description": "Псевдоэлемент after"
+	},
+	"Псевдоэлемент before": {
+		"scope": "scss,css",
+		"prefix": "bef",
+		"body": [
+			"position: relative;",
+			"&::before{",
+			"content: '';",
+			"position: absolute;",
+			"width: $1px;",
+			"height: $2px;",
+			"top: $3px;",
+			"left: $4px;",
+			"display: block;",
+			"}$0",
+		],
+		"description": "Псевдоэлемент before"
+	},
+	"Swiper": {
+		"scope": "html",
+		"prefix": "sw",
+		"body": [
+			"<div class=\"$1 swiper-container\">",
+			"<div class=\"swiper-wrapper\">",
+			"<div class=\"swiper-slide\">",
+			"$2",
+			"</div>",
+			"</div>",
+			"<div class=\"swiper-pagination\"></div>",
+			"<div class=\"swiper-button-prev\"></div>",
+			"<div class=\"swiper-button-next\"></div>",
+			"</div>$0",
+		],
+		"description": "Swiper"
+	},
+	"Hover": {
+		"scope": "scss,css",
+		"prefix": "hov",
+		"body": [
+			"transition: all 0.3s ease;",
+			"&:hover {",
+			"$1",
+			"}$0",
+		],
+		"description": "Hover"
+	},
+	"Max-width all": {
+		"scope": "scss,css",
+		"prefix": "0",
+		"body": [
+			"@media(max-width: $1px){",
+			"$2",
+			"}$0",
+		],
+		"description": "Max-width"
+	},
+	"Max-width 1280": {
+		"scope": "scss,css",
+		"prefix": "12",
+		"body": [
+			"@media(max-width: 1280px){",
+			"$1",
+			"}$0",
+		],
+		"description": "Max-width 1280"
+	},
+	"Max-width 992": {
+		"scope": "scss,css",
+		"prefix": "9",
+		"body": [
+			"@media(max-width: 992px){",
+			"$1",
+			"}$0",
+		],
+		"description": "Max-width 992"
+	},
+	"Max-width 768": {
+		"scope": "scss,css",
+		"prefix": "7",
+		"body": [
+			"@media(max-width: 768px){",
+			"$1",
+			"}$0",
+		],
+		"description": "Max-width 768"
+	},
+	"Max-width 576": {
+		"scope": "scss,css",
+		"prefix": "5",
+		"body": [
+			"@media(max-width: 576px){",
+			"$1",
+			"}$0",
+		],
+		"description": "Max-width 576"
+	},
+	"Max-width 375": {
+		"scope": "scss,css",
+		"prefix": "3",
+		"body": [
+			"@media(max-width: 375px){",
+			"$1",
+			"}$0",
+		],
+		"description": "Max-width 375"
+	},
+	"querySelector": {
+		"scope": "javascript",
+		"prefix": "qq",
+		"body": [
+			"let $1 = document.querySelector('$2');$0",
+		],
+		"description": "querySelector"
+	},
+	"querySelectorAll": {
+		"scope": "javascript",
+		"prefix": "qqa",
+		"body": [
+			"let $1 = document.querySelectorAll('$2');$0",
+		],
+		"description": "querySelectorAll"
+	},
+	"classList.add": {
+		"scope": "javascript",
+		"prefix": "ca",
+		"body": [
+			"button.classList.add('$1');$0",
+		],
+		"description": "classList.add"
+	},
+	"classList.remove": {
+		"scope": "javascript",
+		"prefix": "cr",
+		"body": [
+			"button.classList.remove('$1');$0",
+		],
+		"description": "classList.remove"
+	},
+	"classList.toggle": {
+		"scope": "javascript",
+		"prefix": "ct",
+		"body": [
+			"button.classList.toggle('$1');$0",
+		],
+		"description": "classList.toggle"
+	},
+}
