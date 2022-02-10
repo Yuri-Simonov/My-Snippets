@@ -19,8 +19,7 @@
 		"scope": "scss,css",
 		"prefix": "mm",
 		"body": [
-			"margin: $1px $2px $3px $4px;",
-			"$0"
+			"margin: $1px $2px $3px $4px;$0"
 		],
 		"description": "Внешний отступ"
 	},
@@ -28,8 +27,7 @@
 		"scope": "scss,css",
 		"prefix": "pp",
 		"body": [
-			"padding: $1px $2px $3px $4px;",
-			"$0"
+			"padding: $1px $2px $3px $4px;$0"
 		],
 		"description": "Внутренний отступ"
 	},
@@ -72,9 +70,6 @@
 			"transform: translateY(-50%);",
 			"left: $3px;",
 			"display: block;",
-			"background: $4;",
-			"border-radius: $5px",
-			"border: $6 solid $7",
 			"}$0"
 		],
 		"description": "Псевдоэлемент after"
@@ -93,9 +88,6 @@
 			"transform: translateY(-50%);",
 			"left: $3px;",
 			"display: block;",
-			"background: $4;",
-			"border-radius: $5px",
-			"border: $6 solid $7",
 			"}$0"
 		],
 		"description": "Псевдоэлемент before"
@@ -104,7 +96,7 @@
 		"scope": "html",
 		"prefix": "sw",
 		"body": [
-			"<div class=\"$1 swiper-container\">",
+			"<div class=\"$0 swiper-container\">",
 			"<div class=\"swiper-wrapper\">",
 			"<div class=\"swiper-slide\">",
 			"$2",
@@ -113,7 +105,7 @@
 			"<div class=\"swiper-pagination\"></div>",
 			"<div class=\"swiper-button-prev\"></div>",
 			"<div class=\"swiper-button-next\"></div>",
-			"</div>$0"
+			"</div>"
 		],
 		"description": "Swiper"
 	},
@@ -123,9 +115,8 @@
 		"body": [
 			"transition: all 0.3s ease;",
 			"&:hover {",
-			"background: $1;",
-			"color: $2;",
-			"}$0"
+			"$0",
+			"}"
 		],
 		"description": "Hover"
 	},
@@ -134,28 +125,18 @@
 		"prefix": "0",
 		"body": [
 			"@media(max-width: $1px){",
-			"$2",
-			"}$0"
+			"$0",
+			"}"
 		],
 		"description": "Max-width"
-	},
-	"Max-width 1280": {
-		"scope": "scss,css",
-		"prefix": "12",
-		"body": [
-			"@media(max-width: 1279px){",
-			"$1",
-			"}$0"
-		],
-		"description": "Max-width 1279"
 	},
 	"Max-width 992": {
 		"scope": "scss,css",
 		"prefix": "9",
 		"body": [
 			"@media(max-width: 992px){",
-			"$1",
-			"}$0"
+			"$0",
+			"}"
 		],
 		"description": "Max-width 992"
 	},
@@ -164,8 +145,8 @@
 		"prefix": "7",
 		"body": [
 			"@media(max-width: 768px){",
-			"$1",
-			"}$0"
+			"$0",
+			"}"
 		],
 		"description": "Max-width 768"
 	},
@@ -174,8 +155,8 @@
 		"prefix": "5",
 		"body": [
 			"@media(max-width: 576px){",
-			"$1",
-			"}$0"
+			"$0",
+			"}"
 		],
 		"description": "Max-width 576"
 	},
@@ -184,8 +165,8 @@
 		"prefix": "3",
 		"body": [
 			"@media(max-width: 375px){",
-			"$1",
-			"}$0"
+			"$0",
+			"}"
 		],
 		"description": "Max-width 375"
 	},
@@ -193,7 +174,7 @@
 		"scope": "javascript, javascriptreact",
 		"prefix": "qq",
 		"body": [
-			"let $1 = document.querySelector('.$2');$0"
+			"const $1 = document.querySelector('.$2');$0"
 		],
 		"description": "querySelector"
 	},
@@ -201,7 +182,7 @@
 		"scope": "javascript, javascriptreact",
 		"prefix": "qqa",
 		"body": [
-			"let $1 = document.querySelectorAll('.$2');$0"
+			"const $1 = document.querySelectorAll('.$2');$0"
 		],
 		"description": "querySelectorAll"
 	},
@@ -209,7 +190,7 @@
 		"scope": "javascript, javascriptreact",
 		"prefix": "ca",
 		"body": [
-			"button.classList.add('$1');$0"
+			"$1.classList.add('$2');$0"
 		],
 		"description": "classList.add"
 	},
@@ -217,7 +198,7 @@
 		"scope": "javascript, javascriptreact",
 		"prefix": "cr",
 		"body": [
-			"button.classList.remove('$1');$0"
+			"$1.classList.remove('$2');$0"
 		],
 		"description": "classList.remove"
 	},
@@ -225,7 +206,7 @@
 		"scope": "javascript, javascriptreact",
 		"prefix": "ct",
 		"body": [
-			"button.classList.toggle('$1');$0"
+			"$1.classList.toggle('$2');$0"
 		],
 		"description": "classList.toggle"
 	},
