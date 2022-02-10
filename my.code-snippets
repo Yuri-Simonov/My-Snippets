@@ -93,7 +93,7 @@
 		"description": "Псевдоэлемент before"
 	},
 	"Swiper": {
-		"scope": "html",
+		"scope": "html, javascriptreact",
 		"prefix": "sw",
 		"body": [
 			"<div class=\"$0 swiper-container\">",
@@ -105,6 +105,18 @@
 			"<div class=\"swiper-pagination\"></div>",
 			"<div class=\"swiper-button-prev\"></div>",
 			"<div class=\"swiper-button-next\"></div>",
+			"</div>"
+		],
+		"description": "Swiper"
+	},
+	"Modal": {
+		"scope": "html, javascriptreact",
+		"prefix": "md",
+		"body": [
+			"<div class=\"modal $1\">",
+			"<div class=\"modal__body\">",
+			"$2",
+			"</div>",
 			"</div>"
 		],
 		"description": "Swiper"
