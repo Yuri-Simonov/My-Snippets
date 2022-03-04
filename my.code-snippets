@@ -15,6 +15,38 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// },
+	//
+	// HTML, React =============================================================================
+	"Swiper": {
+		"scope": "html, javascriptreact",
+		"prefix": "sw",
+		"body": [
+			"<div class=\"$0 swiper-container\">",
+			"<div class=\"swiper-wrapper\">",
+			"<div class=\"swiper-slide\">",
+			"$2",
+			"</div>",
+			"</div>",
+			"<div class=\"swiper-pagination\"></div>",
+			"<div class=\"swiper-button-prev\"></div>",
+			"<div class=\"swiper-button-next\"></div>",
+			"</div>"
+		],
+		"description": "Swiper"
+	},
+	"Modal": {
+		"scope": "html, javascriptreact",
+		"prefix": "md",
+		"body": [
+			"<div class=\"modal $1\">",
+			"<div class=\"modal__body\">",
+			"$2",
+			"</div>",
+			"</div>"
+		],
+		"description": "Swiper"
+	},
+	// CSS, SCSS =============================================================================
 	"Внешний отступ": {
 		"scope": "scss,css",
 		"prefix": "mm",
@@ -92,35 +124,6 @@
 		],
 		"description": "Псевдоэлемент before"
 	},
-	"Swiper": {
-		"scope": "html, javascriptreact",
-		"prefix": "sw",
-		"body": [
-			"<div class=\"$0 swiper-container\">",
-			"<div class=\"swiper-wrapper\">",
-			"<div class=\"swiper-slide\">",
-			"$2",
-			"</div>",
-			"</div>",
-			"<div class=\"swiper-pagination\"></div>",
-			"<div class=\"swiper-button-prev\"></div>",
-			"<div class=\"swiper-button-next\"></div>",
-			"</div>"
-		],
-		"description": "Swiper"
-	},
-	"Modal": {
-		"scope": "html, javascriptreact",
-		"prefix": "md",
-		"body": [
-			"<div class=\"modal $1\">",
-			"<div class=\"modal__body\">",
-			"$2",
-			"</div>",
-			"</div>"
-		],
-		"description": "Swiper"
-	},
 	"Hover": {
 		"scope": "scss,css",
 		"prefix": "hov",
@@ -182,6 +185,19 @@
 		],
 		"description": "Max-width 375"
 	},
+	"Slice text": {
+		"scope": "scss,css",
+		"prefix": "st",
+		"body": [
+			"overflow: hidden;",
+			"text-overflow: ellipsis;",
+			"display: -webkit-box;",
+			"-webkit-line-clamp: $0;",
+			"-webkit-box-orient: vertical;"
+		],
+		"description": "Slice text"
+	},
+	// JS, React =============================================================================
 	"querySelector": {
 		"scope": "javascript, javascriptreact",
 		"prefix": "qq",
