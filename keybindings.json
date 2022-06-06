@@ -1,0 +1,11 @@
+// Поместите настраиваемые сочетания клавиш в этот файл, чтобы переопределить сочетания клавиш по умолчанию.auto[]
+[
+	{
+		"key": "ctrl+alt+1",
+		"command": "extension.ecsstractor_port_runwithbem"
+	},
+	{
+		"key": "ctrl+alt+2",
+		"command": "extension.ecsstractor_port_run"
+	}
+]

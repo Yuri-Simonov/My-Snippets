@@ -1,0 +1,51 @@
+{
+	"files.autoSave": "onWindowChange",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.mouseWheelZoom": true,
+	"liveSassCompile.settings.generateMap": false,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"autoprefix": "last 5 version",
+			"extensionName": ".css",
+			"savePath": "css"
+		}
+	],
+	"vscodeGoogleTranslate.preferredLanguage": "English",
+	"explorer.confirmDelete": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"explorer.confirmDragAndDrop": false,
+	"terminal.integrated.tabs.enabled": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.formatOnSave": true,
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"emmet.triggerExpansionOnTab": true,
+	"bracketPairColorizer.depreciation-notice": false,
+	"path-autocomplete.pathMappings": {
+		"@img": "${folder}/src/img", //alias for images
+		"@scss": "${folder}/src/scss", //alias for scss
+		"@js": "${folder}/src/js" //alias for js
+	},
+	"html.hover.documentation": false,
+	"html.hover.references": false,
+	"css.hover.documentation": false,
+	"css.hover.references": false,
+	"scss.hover.documentation": false,
+	"scss.hover.references": false,
+	"yaml.schemas": {
+		"file:///c%3A/Users/%D0%AE%D1%80%D0%B8%D0%B9/.vscode/extensions/atlassian.atlascode-2.10.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+	},
+	"atlascode.bitbucket.enabled": false,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"editor.formatOnPaste": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"window.zoomLevel": 1,
+	"settingsSync.ignoredExtensions": [],
+	"liveSassCompile.settings.autoprefix": []
+}
